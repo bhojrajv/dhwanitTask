@@ -21,7 +21,7 @@ class UserLoginController extends GetxController{
     required UserLogin userLogin
   }) async {
     try {
-      log("login");
+    //  log("login");
       islogin(true);
       userResModel = await remoteSourceImpl.postUsers( userLogin: userLogin);
      /* userResModel=UserResModel(nandghar:  Nandghar(status: userResModel.nandghar?.status,message:userResModel.nandghar?.message ));*/

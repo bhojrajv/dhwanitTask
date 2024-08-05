@@ -14,7 +14,7 @@ class ChildController extends GetxController{
   Future<void>fetch_childList({String?token})async{
     isChild.value=true;
     getchildRes.value=await remoSourceImpl.getchildList(token: token??"");
-    debugPrint("child:${getchildRes.value.childProfile?.first.name}");
+    //debugPrint("child:${getchildRes.value.childProfile?.first.name}");
     isChild.value=false;
     update();
   }

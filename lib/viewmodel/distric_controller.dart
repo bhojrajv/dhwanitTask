@@ -20,7 +20,7 @@ class DisContorller extends GetxController{
   Future<void>fetch_dist({String?token})async{
     isDist.value=true;
     getDistRes.value=await remoSourceImpl.getDist(token: token??"");
-    debugPrint("dist:${getDistRes.value.district?.first.districtName}");
+   // debugPrint("dist:${getDistRes.value.district?.first.districtName}");
     isDist.value=false;
     update();
   }
